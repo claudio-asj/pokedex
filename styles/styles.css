@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* Configurando o fundo */
+    background-image: url("../assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* Centralizando os container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+}
+
+main {
+    /* Centralizando os container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+main img {
+    max-width: 200px;
+}
+
+main h1 {
+    color: #fefefe;
+    text-align: center;
+    font-size: 24px;
+}
+
+#formulario {
+    display: flex;
+    max-width: 300px;
+    height: 32px;
+}
+#formulario input {
+    padding: 4px;
+    width: 80%;
+    border-radius: 8px 0 0 8px ;
+    border: none;
+}
+
+#formulario button {
+    width: 20%;
+    border-radius: 0 8px 8px 0;
+    border: 0;
+    cursor: pointer;
+    background-color: #f34646;
+    font-size: 24px;
+    color: #fefefe;
+}
+
+#formulario button:hover {
+    background-color: #eb1e1e;
+}
+
+#ver-mais {
+    background-color: transparent;
+    padding: 4px 12px;
+    border: 2px solid #fefefe;
+    border-radius: 8px;
+    color: #fefefe;
+    font-weight: 700;
+    opacity: .6;
+    cursor: pointer;
+}
+
+#ver-mais:hover {
+    opacity: 1;
+    background-color: #fefefe;
+    color: #747474;
+}
+
+
+#modal {
+    position: absolute;
+    margin: auto;
+
+    height: 350px;
+    width: 90%;
+    max-width: 500px;
+
+    padding: 1rem;
+
+    background-color: #fefefe;
+
+    display: none;
+
+    border-radius: 16px;
+}
+
+
+
+#img-pokemon {
+    width: 40%;
+
+    /* Centralizando os container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #dad6d6;
+    border-radius: 8px;
+}
+
+#img-pokemon img {
+    width: 80%;
+}
+
+#about-pokemon {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+#name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#types {
+    display: flex;
+    gap: 1rem;
+}
+
+.type {
+    padding: 4px 16px;
+    border-radius: 16px;
+    font-weight: 400;
+    color: #fefefe;
+    background-color: black;
+}
+
+.fire {
+    background-color: #f34646;
+}
+
+
+.normal {
+    background-color: #c5c3c3;
+}
